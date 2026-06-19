@@ -1,0 +1,252 @@
+
+#heading,
+#signup,
+#continue {
+  width: 25%;
+  margin: auto;
+  margin-bottom: 2%;
+  text-align: center;
+}
+
+
+#signup {
+  padding: 2%;
+  height: 270px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.name {
+  width: 80%;
+  padding: 5%;
+  border: none;
+}
+.inputdiv {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.171);
+}
+#continue {
+  width: 29%;
+}
+#btn {
+  width: 100%;
+  padding: 4%;
+  background-color: tomato;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+.fas {
+  color: rgba(0, 0, 0, 0.878);
+}
+.gender {
+  width: 97%;
+  padding: 4% 0 6% 2%;
+  float: left;
+  display: flex;
+}
+#radio {
+  display: flex;
+  width: 80%;
+}
+#female {
+  padding: 0 10% 0 2%;
+}
+
+#social {
+  /* border: 1px solid grey; */
+  display: flex;
+  margin: auto;
+  width: 29%;
+ 
+}
+#left,
+#rigth {
+  border: 1px solid rgba(128, 128, 128, 0.3);
+  display: flex;
+  width: 30%;
+  height: 0.5%;
+  margin-top: 10px;
+}
+#text {
+  border: 1px solid grey;
+  display: flex;
+  width: 40%;
+  border-radius: 10px;
+  padding-left: 10%;
+  text-align: center;
+}
+#socialAccount {
+  /* border: 1px solid red; */
+  display: flex;
+  margin: 4%;
+  width: 29%;
+  margin: auto;
+  justify-content: space-between;
+  cursor: pointer;
+}
+#fb,
+#google {
+  padding: 0.5%;
+  margin: 5% 0;
+  width: 43%;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.h3,
+.p {
+  text-align: center;
+}
+
+#heading h5 {
+  font-size: 25px;
+  color: grey;
+ 
+
+}
+
+#heading h4 {
+  font-size: 40px;
+  color: black;
+  
+}
+
+
+.p {
+  color: grey;
+  font-size: 12px;
+}
+p > a,
+.h3 > a {
+  color: tomato;
+}
+
+#message {
+  color: tomato;
+  font-size: 15px;
+}
+a{
+  text-decoration: none;
+}
+
+
+
+
+
+/* =========================
+   MOBILE VIEW (up to 767px)
+   ========================= */
+@media screen and (max-width: 824px) {
+
+  #heading,
+  #signup,
+  #continue,
+  #social,
+  #socialAccount {
+    width: 65%;
+  }
+
+  #heading h4 {
+    font-size: 22px;
+  }
+
+  #heading h5 {
+    font-size: 18px;
+  }
+
+  #signup {
+    height: 260px;
+    padding: 15px;
+  }
+
+  .name {
+    width: 85%;
+    padding: 14px 10px;
+    font-size: 14px;
+  }
+
+  .inputdiv {
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+  }
+
+  .inputdiv i {
+    width: 30px;
+    text-align: center;
+  }
+
+  .gender {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+#radio {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: auto;
+}
+
+#female,
+#male {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 0;
+}
+
+  #btn {
+    padding: 14px;
+    font-size: 15px;
+  }
+
+  
+  #btn:hover {
+    background-color: white;
+    color: tomato;
+    border: 2px solid  tomato;
+  }
+
+  #social {
+    align-items: center;
+
+  }
+
+  #left,
+  #rigth {
+    width: 25%;
+  }
+
+  #text {
+  
+    width: 50%;
+    font-size: 12px;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #socialAccount {
+    display: flex;
+  justify-content: center;
+  gap: 30px;
+  }
+
+  #fb,
+  #google {
+   width: 80px;
+  margin: 15px 0;
+  text-align: center
+  }
+
+  #fb img,
+  #google img {
+    width: 40px;
+  }
+
+  .h3,
+  .p {
+    padding: 0 15px;
+    font-size: 14px;
+  }
+}
