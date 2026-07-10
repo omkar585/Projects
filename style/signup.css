@@ -24,6 +24,7 @@
 }
 #continue {
   width: 29%;
+ 
 }
 #btn {
   width: 100%;
@@ -33,6 +34,7 @@
   border-radius: 5px;
   border: none;
   cursor: pointer;
+  font-size: x-large;
 }
 .fas {
   color: rgba(0, 0, 0, 0.878);

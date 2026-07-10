@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Page</title>
+<link rel="stylesheet" href="./productpg.css">
+<link rel="stylesheet" href="./components/navbar.css" />
+<link rel="stylesheet" href="./components/footer.css" />
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</head>
+<body>
+
+<header class="header-div">
+    <div class="navbar-box">
+      <div class="nav-left">
+        <div id="nav-left-icon">
+          <ul>
+            <li>
+              <a href="store.html"
+                ><i class="material-icons">store</i>
+                <p>All Stores</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="material-icons">contact_page</i>
+                <p>Contact us</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-logo">
+          <a href="../index.html">
+            <img
+              src= "https://cmsimages.shoppersstop.com/assets/WebHeader/logoIcon.png"  
+              alt=""
+            />
+          </a>
+        </div>
+      </div>
+      <div class="nav-right">
+        <div class="nav-search">
+          <input
+            id="input-search"
+            type="text"
+            placeholder="Search Products & Brands"
+          />
+          <button id="search-btn">
+            <i class="material-icons">search</i>
+          </button>
+        </div>
+        <div class="nav-right-icon">
+          <ul>
+            <li class="nav-wishlist">
+              <a href="">
+                <i class="material-icons">favorite_border</i>
+              </a>
+            </li>
+            <li>
+              <a href="./cart.html">
+                <i class="material-icons">shopping_bag</i>
+              </a>
+            </li>
+            <li id="account-icon">
+              <a href="../signup.html">
+                <i class="material-icons">account_circle</i>
+              </a>
+              <ul id="nav-account">
+                <li><a href="../Login/login.html">SIGN IN</a></li>
+                <hr />
+                <li><a href="../signup.html">SIGN UP</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="nav-menubar">
+      <div class="nav-menubar-inner">
+        <div id="menubar-bargains"><p>BARGA%NS</p></div>
+        <div id="menubar-women"><p>WOMEN</p></div>
+        <div id="menubar-kids"><p>KIDS</p></div>
+        <div id="menubar-beauty"><p>BEAUTY</p></div>
+        <div id="menubar-men"><p><a href="./mens.html">MEN</a></p></div>
+        <div id="menubar-homestop"><p>HOMESTOP</p></div>
+        <div id="menubar-watches"><p>WATCHES</p></div>
+        <div id="menubar-brands"><p>BRANDS</p></div>
+        <div id="menubar-gift"><p>GIFT</p></div>
+        <div id="menubar-luxe"><p>LUXE</p></div>
+      </div>
+    </div>
+  </header>
+
+
+
+
+<div class="container">
+
+    <!-- Breadcrumb -->
+    <!-- <div class="breadcrumb">
+        Home / Men / Casual Wear / <span>T-Shirts</span>
+    </div> -->
+
+    <div class="product">
+
+        <!-- Left Images -->
+        <div class="gallery">
+
+            <div class="thumb">
+                <img src="https://images-magento.shoppersstop.com/pub/media/catalog/product/A23UPLE001/A23UPLE001_WHITE/A23UPLE001_WHITE.jpg_2000Wx3000H" alt="">
+            </div>
+
+            <div class="thumb">
+                <img src="https://images-magento.shoppersstop.com/pub/media/catalog/product/A23UPLE001/A23UPLE001_WHITE/A23UPLE001_WHITE_alt1.jpg_2000Wx3000H" alt="">
+            </div>
+
+            <div class="thumb">
+                <img src="https://images-magento.shoppersstop.com/pub/media/catalog/product/A23UPLE001/A23UPLE001_WHITE/A23UPLE001_WHITE_alt2.jpg_2000Wx3000H" alt="">
+            </div>
+
+            <div class="thumb">
+                <img src="https://images-magento.shoppersstop.com/pub/media/catalog/product/A23UPLE001/A23UPLE001_WHITE/A23UPLE001_WHITE_alt3.jpg_2000Wx3000H" alt="">
+            </div>
+
+        </div>
+
+        <!-- Main Image -->
+
+        <div class="main-image">
+            <img src="https://images-magento.shoppersstop.com/pub/media/catalog/product/A23UPLE001/A23UPLE001_WHITE/A23UPLE001_WHITE.jpg_2000Wx3000H" alt="">
+        </div>
+
+        <!-- Product Details -->
+
+        <div class="details">
+
+            <h1>U.S. POLO ASSN.</h1>
+
+            <p class="title">
+                Typographic Cotton Regular Fit Men T-Shirt
+            </p>
+
+            <h2>₹699</h2>
+
+            <p class="tax">Inclusive of all taxes</p>
+
+            <!-- Color -->
+
+            <h3>COLORS</h3>
+
+            <div class="colors">
+
+                <div class="color">
+                    <img src="https://images-magento.shoppersstop.com/pub/media/catalog/product/A23UPLE001/A23UPLE001_WHITE/A23UPLE001_WHITE.jpg_2000Wx3000H">
+                </div>
+
+                <div class="color">
+                    <img src="https://images-magento.shoppersstop.com/pub/media/catalog/product/A23UPLE001/A23UPLE001_WHITE/A23UPLE001_WHITE.jpg_2000Wx3000H">
+                </div>
+
+            </div>
+
+            <!-- Size -->
+
+            <h3>SIZE</h3>
+
+            <div class="sizes">
+                <button>S</button>
+                <button>M</button>
+                <button>L</button>
+                <button>XL</button>
+                <button>2XL</button>
+            </div>
+
+            <!-- Button -->
+
+            <button class="bag">
+                Add To Bag
+            </button>
+
+            <!-- Offers -->
+
+            <h3>OFFERS</h3>
+
+            <div class="offers">
+
+                <div class="offer">
+                    Code: NEW10 <br>
+                    10% OFF upto ₹500
+                </div>
+
+                <div class="offer">
+                    Code: SALE26 <br>
+                    Extra Discount
+                </div>
+
+            </div>
+
+            <!-- Delivery -->
+
+            <h3>DELIVERY DETAILS</h3>
+
+            <div class="delivery">
+
+                <input type="text" placeholder="Enter your PIN code">
+
+                <button>CHECK</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+<!-- Additional Details -->
+
+<section class="details">
+
+    <h2>ADDITIONAL DETAILS</h2>
+
+    <h3>About The Brand</h3>
+
+    <p>
+        U.S. Polo Assn. represents the authentic spirit of the sport of polo,
+        serving as the official brand of the United States Polo Association.
+        Its sport-inspired apparel, footwear, accessories and lifestyle products
+        bring classic American style to over 190 countries.
+    </p>
+
+    <a href="#">View More <i class="fa-solid fa-angle-down"></i></a>
+
+</section>
+
+<!-- Similar Products -->
+
+<section class="similar">
+
+<h2>SIMILAR PRODUCTS</h2>
+
+<div class="products">
+
+<div class="card">
+<img src="https://images-magento.shoppersstop.com/pub/media/catalog/product/SS24BOSS691652_base/SS24BOSS691652_NoColour/SS24BOSS691652_NoColour.jpg_2000Wx3000H">
+<h3>U.S. POLO ASSN.</h3>
+<p>Typographic Cotton T-Shirt</p>
+<span>₹699</span>
+</div>
+
+<div class="card">
+<img src="https://images-magento.shoppersstop.com/pub/media/catalog/product/S26TOMMYHMKT884/S26TOMMYHMKT884_BLACK/S26TOMMYHMKT884_BLACK.jpg">
+<h3>U.S. POLO ASSN.</h3>
+<p>Regular Fit T-Shirt</p>
+<span>₹799</span>
+</div>
+
+<div class="card">
+<img src="https://images-magento.shoppersstop.com/pub/media/catalog/product/S26UDTSH4139WHI/S26UDTSH4139WHI_WHITE/S26UDTSH4139WHI_WHITE.jpg">
+<h3>U.S. POLO ASSN.</h3>
+<p>Printed Cotton T-Shirt</p>
+<span>₹899</span>
+</div>
+
+<div class="card">
+<img src="https://images-magento.shoppersstop.com/pub/media/catalog/product/SS25LCFT36WH/SS25LCFT36WH_IVORY/SS25LCFT36WH_IVORY.jpg">
+<h3>U.S. POLO ASSN.</h3>
+<p>Round Neck T-Shirt</p>
+<span>₹599</span>
+</div>
+
+<div class="card">
+<img src="https://images-magento.shoppersstop.com/pub/media/catalog/product/WT1274104404100_base/WT1274104404100_base_NoColour/WT1274104404100_NoColour.jpg">
+<h3>U.S. POLO ASSN.</h3>
+<p>V Neck T-Shirt</p>
+<span>₹749</span>
+</div>
+
+</div>
+
+</section>
+
+<!-- Sticky Bottom -->
+
+<div class="bottom-bar">
+<div class="left">
+<img src="https://images-magento.shoppersstop.com/pub/media/catalog/product/A23UPLE001/A23UPLE001_WHITE/A23UPLE001_WHITE.jpg_2000Wx3000H">
+
+<div>
+<h3>U.S. POLO ASSN.</h3>
+<p>Typographic Cotton Regular Fit Men T-Shirt</p>
+</div>
+
+</div>
+
+<div class="price">
+₹699
+</div>
+
+<button>Add To Bag</button>
+</div>
+
+<!--footer-->
+
+<footer>
+    <div class="footer-top">
+
+        <!-- Left -->
+        <div class="footer-col">
+            <h1 class="logo">SHOPPERS STOP</h1>
+
+            <h3>Reach Out To Us</h3>
+
+            <p><i class="fa-solid fa-phone"></i> +91 - 796-972-7777</p>
+
+            <p><i class="fa-regular fa-envelope"></i>
+                customercare@shoppersstop.com
+            </p>
+
+            <h3 class="app-title">Experience Shoppers Stop App On Mobile</h3>
+
+            <div class="app-buttons">
+                <a href="#"><img src="https://storage.googleapis.com/images_cms_preprod_sscom/app_Store_Icons_f6e52b25de/app_Store_Icons_f6e52b25de.png"/></a>
+                <a href="#"><img src="https://storage.googleapis.com/images_cms_preprod_sscom/google_Play_Icons_b931ade941/google_Play_Icons_b931ade941.png"/></a>
+            </div>
+        </div>
+
+        <!-- Categories -->
+        <div class="footer-col">
+            <h3>Top Categories</h3>
+
+            <ul>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Kids</a></li>
+                <li><a href="#">Beauty</a></li>
+                <li><a href="#">Watches</a></li>
+                <li><a href="#">Gift</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Luxe</a></li>
+                <li><a href="#">Bargain</a></li>
+            </ul>
+        </div>
+
+        <!-- Links -->
+        <div class="footer-col">
+            <h3>Useful Links</h3>
+
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Track Orders</a></li>
+                <li><a href="#">Corporate Site</a></li>
+                <li><a href="#">Store Locator</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Help/FAQS</a></li>
+                <li><a href="#">First Citizen Club</a></li>
+                <li><a href="#">First Citizen Policy</a></li>
+            </ul>
+        </div>
+
+        <!-- Policies -->
+        <div class="footer-col">
+            <h3>Our Policies</h3>
+
+            <ul>
+                <li><a href="#">Terms Of Use</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Delivery Policy</a></li>
+                <li><a href="#">Exchange & Return</a></li>
+            </ul>
+        </div>
+
+        <!-- Payment -->
+        <div class="footer-col payment">
+            <h3>Pay Securely By</h3>
+
+            <div class="cards">
+                <img src="https://storage.googleapis.com/images_cms_preprod_sscom/visa_Pay_Securely_d7a874b395/visa_Pay_Securely_d7a874b395.png" alt="">
+                <img src="https://storage.googleapis.com/images_cms_preprod_sscom/master_Card_Pay_Securely_737ba88efb/master_Card_Pay_Securely_737ba88efb.png" alt="">
+                <img src="https://storage.googleapis.com/images_cms_preprod_sscom/american_express_Pay_Securely_a8a1a87f1c/american_express_Pay_Securely_a8a1a87f1c.png" alt="">
+                <img src="https://storage.googleapis.com/images_cms_preprod_sscom/rupay_Pay_Securely_89dc0ab3e2/rupay_Pay_Securely_89dc0ab3e2.png" alt="">
+            </div>
+
+            <h3 class="verify">Verified By</h3>
+
+            <div class="cards">
+                <img src="https://storage.googleapis.com/images_cms_preprod_sscom/visa_Pay_Securely_d7a874b395/visa_Pay_Securely_d7a874b395.png" alt="">
+                <img src="https://storage.googleapis.com/images_cms_preprod_sscom/master_Card_Pay_Securely_737ba88efb/master_Card_Pay_Securely_737ba88efb.png" alt="">
+                <img src="https://storage.googleapis.com/images_cms_preprod_sscom/american_express_Pay_Securely_a8a1a87f1c/american_express_Pay_Securely_a8a1a87f1c.png" alt="">
+                <img src="https://storage.googleapis.com/images_cms_preprod_sscom/rupay_Pay_Securely_89dc0ab3e2/rupay_Pay_Securely_89dc0ab3e2.png" alt="">
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <div class="social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+
+        <div class="copyright">
+            Copyright © 2026 shoppers stop. All Rights Reserved
+        </div>
+
+    </div>
+
+</footer>
+
+
+</body>
+</html>

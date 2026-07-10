@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart </title>
+
+    <link rel="stylesheet" href="./cart.css">
+    <link rel="stylesheet" href="./components/footer.css" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+    <div class="logo">
+        <h1>SHOPPERS STOP</h1>
+    </div>
+
+</header>
+
+<!-- ================= STEP BAR ================= -->
+
+<section class="steps">
+
+    <div class="step active">
+        <div class="circle"></div>
+        <span>Bag</span>
+    </div>
+
+    <div class="line active-line"></div>
+
+    <div class="step">
+        <div class="circle"></div>
+        <span>Address</span>
+    </div>
+
+    <div class="line"></div>
+
+    <div class="step">
+        <div class="circle"></div>
+        <span>Payment</span>
+    </div>
+
+</section>
+
+<!-- === MAIN === -->
+
+<div class="container">
+
+<!--==== LEFT ===-->
+
+<div class="left">
+
+<!-- Address -->
+
+<div class="address-box">
+
+<div class="address-text">
+<i class="fa-solid fa-location-dot"></i>
+
+<p>Please select a delivery address.</p>
+</div>
+
+<button>Select Address</button>
+
+</div>
+
+<h3 class="item-count">2 Items</h3>
+
+<!-- ================= PRODUCT 1 ================= -->
+
+<div class="cart-item">
+
+<div class="product-image">
+<img src="https://images-magento.shoppersstop.com/pub/media/catalog/product/SS26JJ902273801/SS26JJ902273801_BLACK/SS26JJ902273801_BLACK.jpg" alt="">
+</div>
+
+<div class="product-details">
+
+<div class="top-row">
+
+<div>
+
+<h3>
+Spykar
+<span>
+Printed Cotton Regular Fit Men T-Shirt
+</span>
+</h3>
+
+<p class="color-size">
+
+White
+
+<span>Size : S</span>
+
+</p>
+
+</div>
+
+<i class="fa-solid fa-xmark remove"></i>
+
+</div>
+
+<div class="qty-price">
+
+<div class="quantity">
+
+<button>-</button>
+
+<span>1</span>
+
+<button>+</button>
+
+</div>
+
+<div class="price">
+
+<h2>₹1349.25</h2>
+
+<del>₹1799.00</del>
+
+<span class="discount">25% Off</span>
+
+</div>
+
+</div>
+
+<div class="promotion">
+
+<i class="fa-solid fa-tags"></i>
+
+Promotion Applied
+
+</div>
+
+<p class="delivery">
+
+Estimated Delivery by
+<strong>14 Jul</strong>
+
+</p>
+
+</div>
+
+</div>
+
+<!-- ================= PRODUCT 2 ================= -->
+
+<div class="cart-item">
+
+<div class="product-image">
+<img src="https://images-magento.shoppersstop.com/pub/media/catalog/product/A23UPLE001/A23UPLE001_WHITE/A23UPLE001_WHITE.jpg_2000Wx3000H" alt="">
+</div>
+
+<div class="product-details">
+
+<div class="top-row">
+
+<div>
+
+<h3>
+
+U.S. Polo Assn.
+
+<span>
+
+Typographic Cotton Regular Fit Men T-Shirt
+
+</span>
+
+</h3>
+
+<p class="color-size">
+
+White
+
+<span>Size : S</span>
+
+</p>
+
+</div>
+
+<i class="fa-solid fa-xmark remove"></i>
+
+</div>
+
+<div class="qty-price">
+
+<div class="quantity">
+
+<button>-</button>
+
+<span>1</span>
+
+<button>+</button>
+
+</div>
+
+<div class="price">
+
+<h2>₹699.00</h2>
+
+</div>
+
+</div>
+
+<p class="delivery">
+
+Estimated Delivery by
+<strong>14 Jul</strong>
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ================= RIGHT ================= -->
+
+<div class="right">
+
+<!-- Coupon -->
+
+<div class="coupon">
+
+<div>
+
+<i class="fa-solid fa-ticket"></i>
+
+<span>Best coupons for you</span>
+
+</div>
+
+<a href="#">All Coupons</a>
+
+</div>
+
+<!-- Price Card -->
+
+<div class="price-card">
+
+<h2>Price Details</h2>
+
+<div class="row">
+
+<span>Total MRP</span>
+
+<span>₹2498.00</span>
+
+</div>
+
+<div class="row green">
+
+<span>Offer Discount</span>
+
+<span>- ₹449.75</span>
+
+</div>
+
+<div class="row">
+
+<span>Platform Fee</span>
+
+<span>₹10.00</span>
+
+</div>
+
+<div class="row">
+
+<span>Delivery Fee</span>
+
+<span>Free</span>
+
+</div>
+
+<hr>
+
+<div class="row total">
+
+<span>Total Payable amount</span>
+
+<span>₹2058.25</span>
+
+</div>
+
+<div class="saving">
+
+YOU SAVED
+<strong>₹449.75</strong>
+
+ON THIS ORDER!
+
+</div>
+
+<a href="./paymentpg.html">
+<button class="order-btn">
+    
+
+Place Order
+
+</button>
+</a>
+</div>
+
+</div>
+
+</div>
+
+
+
+<!--footer-->
+
+
+<footer>
+    <div class="footer-top">
+
+        <!-- Left -->
+        <div class="footer-col">
+            <h1 class="logo">SHOPPERS STOP</h1>
+
+            <h3>Reach Out To Us</h3>
+
+            <p><i class="fa-solid fa-phone"></i> +91 - 796-972-7777</p>
+
+            <p><i class="fa-regular fa-envelope"></i>
+                customercare@shoppersstop.com
+            </p>
+
+            <h3 class="app-title">Experience Shoppers Stop App On Mobile</h3>
+
+            <div class="app-buttons">
+                <a href="#"><img src="https://storage.googleapis.com/images_cms_preprod_sscom/app_Store_Icons_f6e52b25de/app_Store_Icons_f6e52b25de.png"/></a>
+                <a href="#"><img src="https://storage.googleapis.com/images_cms_preprod_sscom/google_Play_Icons_b931ade941/google_Play_Icons_b931ade941.png"/></a>
+            </div>
+        </div>
+
+        <!-- Categories -->
+        <div class="footer-col">
+            <h3>Top Categories</h3>
+
+            <ul>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Kids</a></li>
+                <li><a href="#">Beauty</a></li>
+                <li><a href="#">Watches</a></li>
+                <li><a href="#">Gift</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Luxe</a></li>
+                <li><a href="#">Bargain</a></li>
+            </ul>
+        </div>
+
+        <!-- Links -->
+        <div class="footer-col">
+            <h3>Useful Links</h3>
+
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Track Orders</a></li>
+                <li><a href="#">Corporate Site</a></li>
+                <li><a href="#">Store Locator</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Help/FAQS</a></li>
+                <li><a href="#">First Citizen Club</a></li>
+                <li><a href="#">First Citizen Policy</a></li>
+            </ul>
+        </div>
+
+        <!-- Policies -->
+        <div class="footer-col">
+            <h3>Our Policies</h3>
+
+            <ul>
+                <li><a href="#">Terms Of Use</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Delivery Policy</a></li>
+                <li><a href="#">Exchange & Return</a></li>
+            </ul>
+        </div>
+
+        <!-- Payment -->
+        <div class="footer-col payment">
+            <h3>Pay Securely By</h3>
+
+            <div class="cards">
+                <img src="https://storage.googleapis.com/images_cms_preprod_sscom/visa_Pay_Securely_d7a874b395/visa_Pay_Securely_d7a874b395.png" alt="">
+                <img src="https://storage.googleapis.com/images_cms_preprod_sscom/master_Card_Pay_Securely_737ba88efb/master_Card_Pay_Securely_737ba88efb.png" alt="">
+                <img src="https://storage.googleapis.com/images_cms_preprod_sscom/american_express_Pay_Securely_a8a1a87f1c/american_express_Pay_Securely_a8a1a87f1c.png" alt="">
+                <img src="https://storage.googleapis.com/images_cms_preprod_sscom/rupay_Pay_Securely_89dc0ab3e2/rupay_Pay_Securely_89dc0ab3e2.png" alt="">
+            </div>
+
+            <h3 class="verify">Verified By</h3>
+
+            <div class="cards">
+                <img src="https://storage.googleapis.com/images_cms_preprod_sscom/visa_Pay_Securely_d7a874b395/visa_Pay_Securely_d7a874b395.png" alt="">
+                <img src="https://storage.googleapis.com/images_cms_preprod_sscom/master_Card_Pay_Securely_737ba88efb/master_Card_Pay_Securely_737ba88efb.png" alt="">
+                <img src="https://storage.googleapis.com/images_cms_preprod_sscom/american_express_Pay_Securely_a8a1a87f1c/american_express_Pay_Securely_a8a1a87f1c.png" alt="">
+                <img src="https://storage.googleapis.com/images_cms_preprod_sscom/rupay_Pay_Securely_89dc0ab3e2/rupay_Pay_Securely_89dc0ab3e2.png" alt="">
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <div class="social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+
+        <div class="copyright">
+            Copyright © 2026 shoppers stop. All Rights Reserved
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+</body>
+</html>

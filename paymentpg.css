@@ -1,0 +1,331 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background:#f7f7f7;
+    color:#222;
+}
+
+/* Header */
+
+header{
+    width:100%;
+    height:75px;
+    background:#fff;
+    border-bottom:1px solid #e5e5e5;
+    display:flex;
+    align-items:center;
+    padding:0 8%;
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+.logo h1{
+    font-size:32px;
+    font-family:Georgia, serif;
+    letter-spacing:2px;
+    font-weight:500;
+}
+
+/* Main Form */
+
+form{
+    width:90%;
+    max-width:950px;
+    margin:40px auto;
+    background:#fff;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+/* Section Titles */
+
+.deMethod,
+.payMethod{
+    background:#000;
+    color:#fff;
+    padding:16px 25px;
+}
+
+.deMethod h3,
+.payMethod h3{
+    font-size:18px;
+    font-weight:500;
+}
+
+/* Delivery Buttons */
+
+.deliveryBtn{
+    display:flex;
+}
+
+.deliveryBtn button{
+    flex:1;
+    padding:15px;
+    border:1px solid #ddd;
+    background:#fff;
+    cursor:pointer;
+    font-weight:500;
+    transition:.3s;
+}
+
+.deliveryBtn button:hover{
+    background:#000;
+    color:#fff;
+}
+
+/* Form Area */
+
+.inputLeft{
+    padding:30px;
+}
+
+/* Two Inputs */
+
+.inputBoxtwo{
+    display:flex;
+    gap:20px;
+    margin-bottom:20px;
+}
+
+/* One Input */
+
+.inputBox{
+    margin-bottom:20px;
+}
+
+/* Inputs */
+
+.name,
+input,
+select{
+    width:100%;
+    padding:14px;
+    border:1px solid #d6d6d6;
+    border-radius:6px;
+    outline:none;
+    font-size:15px;
+}
+
+input:focus,
+select:focus{
+    border-color:#000;
+}
+
+/* Checkbox */
+
+.inputBoxcheck{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin:18px 0;
+}
+
+.inputBoxcheck input{
+    width:auto;
+}
+
+.inputBoxcheck span{
+    color:#d40000;
+}
+
+/* Buttons */
+
+.input-box-save{
+    margin-top:25px;
+}
+
+.save,
+.proceed{
+    background:#000;
+    color:#fff;
+    border:none;
+    padding:14px 35px;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:15px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.save:hover,
+.proceed:hover{
+    background:#444;
+}
+
+/* Payment Section */
+
+#midDivMain{
+    display:none;
+}
+
+.mid-div{
+    display:flex;
+}
+
+/* Left Payment Menu */
+
+.mid-left{
+    width:260px;
+    border-right:1px solid #eee;
+}
+
+.mid-left div{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    padding:18px;
+    border-bottom:1px solid #eee;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.mid-left div:hover{
+    background:#f5f5f5;
+}
+
+/* Right Payment Form */
+
+.mid-right{
+    flex:1;
+    padding:35px;
+}
+
+.mid-right h3{
+    margin-bottom:20px;
+}
+
+.selectDateCVV{
+    display:flex;
+    gap:20px;
+    margin:20px 0;
+}
+
+.selectDateCVV>div{
+    flex:1;
+}
+
+.dateMonth select{
+    width:48%;
+}
+
+/* OTP */
+
+.container{
+    width:90%;
+    max-width:420px;
+    margin:30px auto;
+}
+
+.otpIn{
+    display:none;
+    background:#fff;
+    border-radius:10px;
+    padding:25px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+#otpSubmit{
+    width:100%;
+    margin-top:15px;
+    padding:14px;
+    background:#000;
+    color:#fff;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+#margin{
+    margin:40px 0;
+}
+
+/* ========================= */
+/* Tablet */
+/* ========================= */
+
+@media (max-width:768px){
+
+header{
+    padding:0 20px;
+}
+
+.logo h1{
+    font-size:24px;
+}
+
+form{
+    width:95%;
+}
+
+.inputBoxtwo{
+    flex-direction:column;
+}
+
+.mid-div{
+    flex-direction:column;
+}
+
+.mid-left{
+    width:100%;
+    border-right:none;
+    border-bottom:1px solid #eee;
+}
+
+.selectDateCVV{
+    flex-direction:column;
+}
+
+.save,
+.proceed{
+    width:100%;
+}
+
+}
+
+/* ========================= */
+/* Mobile */
+/* ========================= */
+
+@media (max-width:480px){
+
+header{
+    height:65px;
+}
+
+.logo h1{
+    font-size:20px;
+}
+
+.inputLeft,
+.mid-right{
+    padding:20px;
+}
+
+.deliveryBtn{
+    flex-direction:column;
+}
+
+.deliveryBtn button{
+    width:100%;
+}
+
+.deMethod h3,
+.payMethod h3{
+    font-size:16px;
+}
+
+.name,
+input,
+select{
+    padding:12px;
+    font-size:14px;
+}
+
+}
