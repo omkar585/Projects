@@ -140,6 +140,10 @@ select:focus{
 .input-box-save{
     margin-top:25px;
 }
+.input-box-save a{
+    text-decoration: none;
+    color: #d6d6d6;
+}
 
 .save,
 .proceed{

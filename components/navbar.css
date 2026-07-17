@@ -187,7 +187,7 @@ body {
 /* SHOW DROPDOWN */
 
 #account-icon:hover #nav-account {
-  display: block;
+  display:block;
 }
 
 /* ACCOUNT HEADER */

@@ -1,0 +1,658 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =========================
+   BODY
+========================= */
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #111827;
+  background: #ffffff;
+  /* border: 2px solid blue; */
+}
+
+/* =========================
+   MAIN PAGE
+========================= */
+
+.orders-page {
+  min-height: 100vh;
+  display: flex;
+  border-top: 1px solid #e5e7eb;
+  /* border: 2px solid blue; */
+  margin-top: 135px;
+}
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.sidebar {
+  width: 26%;
+  min-width: 350px;
+ font-size: larger;
+ font-weight: bold;
+  padding: 100px 20px 40px 60px;
+/* border: 2px solid blue; */
+  border-right: 1px solid #dbe1e8;
+}
+
+/* =========================
+   MENU ITEM
+========================= */
+
+.menu-item {
+  width: 100%;
+  min-height: 90px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 14px 24px;
+  margin-bottom: 8px;
+  color: #526276;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  /* border: 2px solid blue; */
+  transition:
+    background-color 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+/* HOVER */
+
+.menu-item:hover {
+  background-color: #f8fafc;
+  border-color: #e1e6ec;
+
+  transform: translateX(3px);
+}
+
+.menu-item i {
+  width: 18px;
+
+  margin-top: 2px;
+
+  font-size: 19px;
+
+  color: #526276;
+/* border: 2px solid blue; */
+  transition: color 0.25s ease;
+}
+
+.menu-item h4 {
+  font-size: 20px;
+  font-weight:400;
+
+  color: #526276;
+/* border: 2px solid blue; */
+  transition: color 0.25s ease;
+}
+
+.menu-item p {
+  margin-top: 2px;
+
+  font-size: 15px;
+  line-height: 16px;
+
+  color: #718096;
+}
+
+/* HOVER ICON AND TEXT */
+
+.menu-item:hover i,
+.menu-item:hover h4 {
+  color: #111827;
+}
+
+/* =========================
+   ACTIVE MENU
+========================= */
+
+.menu-item.active {
+  background: #f7f9fb;
+  border-color: #dce3eb;
+}
+
+.menu-item.active h4 {
+  color: #111827;
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.content {
+  flex: 1;
+
+  min-width: 0;
+
+  padding: 25px 60px;
+}
+
+/* =========================
+   TOP HEADER
+========================= */
+
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.top-header h1 {
+  font-size: 24px;
+  font-weight: 400;
+  color: #111827;
+}
+
+/* =========================
+   ORDER ACTIONS
+========================= */
+
+.order-actions {
+  flex: 1;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-left: 340px;
+}
+
+/* =========================
+   TABS
+========================= */
+
+.tabs {
+  display: flex;
+  gap: 10px;
+}
+
+.tab {
+  height: 37px;
+
+  padding: 0 16px;
+
+  border: 1px solid #d4dae2;
+
+  background-color: #ffffff;
+
+  font-family: inherit;
+  font-size: 13px;
+
+  color: #667085;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease;
+}
+
+/* TAB HOVER */
+
+.tab:hover {
+  border-color: #111827;
+  color: #111827;
+}
+
+/* ACTIVE TAB */
+
+.active-tab {
+  background-color: #101827;
+  border-color: #101827;
+
+  color: #ffffff;
+}
+
+.active-tab:hover {
+  background-color: #242d3d;
+  border-color: #242d3d;
+
+  color: #ffffff;
+}
+
+/* =========================
+   SEARCH
+========================= */
+
+.search-area {
+  display: flex;
+  gap: 12px;
+}
+
+.search-box {
+  width: 580px;
+  height: 36px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 14px;
+
+  background-color: #f5f6f8;
+
+  border: 1px solid transparent;
+
+  transition:
+    background-color 0.25s ease,
+    border-color 0.25s ease;
+}
+
+/* SEARCH HOVER */
+
+.search-box:hover,
+.search-box:focus-within {
+  background-color: #ffffff;
+  border-color: #cfd6df;
+}
+
+.search-box i {
+  font-size: 12px;
+  color: #526276;
+}
+
+.search-box input {
+  width: 100%;
+
+  margin-left: 10px;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+
+  font-family: inherit;
+  font-size: 12px;
+}
+
+.search-box input::placeholder {
+  color: #a0a8b5;
+}
+
+/* =========================
+   FILTER BUTTON
+========================= */
+
+.filter-btn {
+  width: 36px;
+  height: 36px;
+
+  border: none;
+
+  background-color: #f5f6f8;
+
+  color: #526276;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease;
+}
+
+.filter-btn:hover {
+  background-color: #101827;
+  color: #ffffff;
+}
+
+/* =========================
+   EMPTY ORDERS
+========================= */
+
+.empty-orders {
+  min-height: 620px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+/* =========================
+   BAG CIRCLE
+========================= */
+
+.bag-circle {
+  width: 200px;
+  height: 200px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 30px;
+
+  border-radius: 50%;
+
+  background-color: #f5f1eb;
+
+  transition: transform 0.3s ease;
+}
+
+/* SUBTLE HOVER */
+
+.bag-circle:hover {
+  transform: scale(1.03);
+}
+
+/* =========================
+   CSS BAG
+========================= */
+
+.shopping-bag {
+  position: relative;
+
+  width: 105px;
+  height: 90px;
+
+  transform: rotate(-17deg);
+}
+
+.bag-body {
+  position: absolute;
+
+  left: 12px;
+  top: 22px;
+
+  width: 90px;
+  height: 65px;
+
+  border: 3px solid #dec4a5;
+  border-top: none;
+
+  transform: skew(10deg);
+}
+
+.bag-body::before {
+  content: "";
+
+  position: absolute;
+
+  top: -18px;
+  left: -5px;
+
+  width: 88px;
+  height: 25px;
+
+  border: 3px solid #dec4a5;
+
+  transform: skew(-20deg);
+}
+
+.bag-body span {
+  position: absolute;
+
+  top: 7px;
+
+  width: 8px;
+  height: 8px;
+
+  border-radius: 50%;
+
+  background-color: #dec4a5;
+}
+
+.bag-body span:first-child {
+  left: 25px;
+}
+
+.bag-body span:last-child {
+  right: 25px;
+}
+
+.bag-handle {
+  position: absolute;
+
+  top: 28px;
+  left: 35px;
+
+  width: 50px;
+  height: 40px;
+
+  border: 3px solid #dec4a5;
+  border-top: none;
+
+  border-radius: 0 0 35px 35px;
+
+  z-index: 2;
+}
+
+/* =========================
+   EMPTY TEXT
+========================= */
+
+.empty-orders h2 {
+  margin-bottom: 4px;
+
+  font-size: 23px;
+  font-weight: 400;
+
+  color: #111827;
+}
+
+.empty-orders p {
+  max-width: 650px;
+
+  margin-bottom: 32px;
+
+  font-size: 17px;
+  line-height: 28px;
+
+  color: #667085;
+}
+
+/* =========================
+   SHOPPING BUTTON
+========================= */
+
+.shopping-btn {
+  width: 210px;
+  height: 49px;
+
+  border: none;
+
+  background-color: #242021;
+  color: #ffffff;
+
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.shopping-btn:hover {
+  background-color: #000000;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+}
+
+.shopping-btn:active {
+  transform: translateY(0);
+}
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 768px) {
+  /* =========================
+       MAIN PAGE
+    ========================= */
+
+  .orders-page {
+    display: block;
+    margin-top: 90px;
+    border: 2px solid blue;
+  }
+
+  /* =========================
+       SIDEBAR
+    ========================= */
+
+  .sidebar {
+    width: 100%;
+    min-width: 0;
+    display: none;
+    padding: 15px;
+    border-right: none;
+    border-bottom: 1px solid #dbe1e8;
+  }
+
+  /* =========================
+       MENU ITEM
+    ========================= */
+
+  .menu-item {
+    width: 100%;
+
+    min-height: 65px;
+
+    padding: 13px 15px;
+
+    margin-bottom: 8px;
+  }
+
+  .menu-item h4 {
+    font-size: 14px;
+  }
+
+  .menu-item p {
+    font-size: 10px;
+  }
+
+  /* =========================
+       CONTENT
+    ========================= */
+
+  .content {
+    width: 100%;
+
+    padding: 20px 15px;
+  }
+
+  /* =========================
+       HEADER
+    ========================= */
+
+  .top-header {
+    display: block;
+  }
+
+  .top-header h1 {
+    margin-bottom: 20px;
+
+    font-size: 24px;
+  }
+
+  /* =========================
+       ORDER ACTIONS
+    ========================= */
+
+  .order-actions {
+    width: 100%;
+
+    display: block;
+
+    margin-left: 0;
+  }
+
+  /* =========================
+       TABS
+    ========================= */
+
+  .tabs {
+    width: 100%;
+
+    display: flex;
+
+    margin-bottom: 15px;
+  }
+
+  .tab {
+    flex: 1;
+
+    height: 40px;
+  }
+
+  /* =========================
+       SEARCH AREA
+    ========================= */
+
+  .search-area {
+    width: 100%;
+
+    display: flex;
+
+    gap: 8px;
+  }
+
+  .search-box {
+    width: 100%;
+
+    height: 40px;
+  }
+
+  .filter-btn {
+    width: 40px;
+    height: 40px;
+
+    flex-shrink: 0;
+  }
+
+  /* =========================
+       EMPTY ORDERS
+    ========================= */
+
+  .empty-orders {
+    min-height: 480px;
+
+    padding: 30px 10px;
+  }
+
+  .bag-circle {
+    width: 170px;
+    height: 170px;
+
+    margin-bottom: 25px;
+  }
+
+  .empty-orders h2 {
+    font-size: 21px;
+  }
+
+  .empty-orders p {
+    width: 100%;
+    max-width: 450px;
+
+    margin-bottom: 25px;
+
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .shopping-btn {
+    width: 200px;
+    height: 47px;
+
+    font-size: 14px;
+  }
+}
