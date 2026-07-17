@@ -63,6 +63,9 @@ body {
     border-color 0.25s ease,
     transform 0.25s ease;
 }
+.menu-item a{
+  text-decoration: none;
+}
 
 /* HOVER */
 
