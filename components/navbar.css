@@ -107,7 +107,7 @@ body {
 
 #input-search {
   width: 100%;
-
+/* border: 2px solid blue; */
   border: none;
   outline: none;
 
@@ -346,8 +346,8 @@ body {
 
   .nav-search {
     width: 120px;
-
-    padding: 5px 10px;
+   /* border: 2px solid blue; */
+    padding: 2px 1px;
 
     border: 1px solid #ddd;
     border-radius: 20px;
@@ -357,8 +357,10 @@ body {
 
   #input-search {
     width: 100%;
-
+   border-radius: 10px;
     font-size: 11px;
+    height: 30px;
+    /* border: 2px solid rgb(222, 10, 45); */
   }
 
   /* ICONS */
@@ -470,6 +472,7 @@ body {
 @media screen and (max-width: 400px) {
   .nav-search {
     width: 100px;
+    /* border: 2px solid blue; */
   }
 
   .nav-right-icon ul {
