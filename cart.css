@@ -10,6 +10,7 @@
 body{
     background:#fff;
     color:#222;
+    /* border: 2px solid blue; */
 }
 
 /* ======HEADER==== */
@@ -32,46 +33,6 @@ header{
     margin-top: 30px;
 }
 
-/* =====STEP BAR==== */
-
-.steps{
-    width:100%;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap:10px;
-    margin:35px 0;
-}
-
-.step{
-    display:flex;
-    align-items:center;
-    gap:10px;
-}
-
-.circle{
-    width:22px;
-    height:22px;
-    border:2px solid #222;
-    border-radius:50%;
-    background:#fff;
-}
-
-.active .circle{
-    background:#222;
-    border:5px solid #fff;
-    box-shadow:0 0 0 2px #222;
-}
-
-.line{
-    width:120px;
-    height:2px;
-    background:#d8d8d8;
-}
-
-.active-line{
-    background:#222;
-}
 
 /* =========================
    MAIN
@@ -83,6 +44,8 @@ header{
     display:grid;
     grid-template-columns:2fr 1fr;
     gap:30px;
+    margin-top: 50px;
+     /* border: 2px solid blue; */
 }
 
 /* =========================
