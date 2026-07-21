@@ -1,0 +1,457 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins",sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+}
+
+
+/* ================= Layout ================= */
+
+.container{
+    display:flex;
+    min-height:100vh;
+}
+
+
+/* ================= Sidebar ================= */
+
+.sidebar{
+
+    width:250px;
+    height:100vh;
+    background:#1e293b;
+    color:white;
+    position:fixed;
+    left:0;
+    top:0;
+    padding:20px 0;
+    box-shadow:3px 0 15px rgba(0,0,0,0.15);
+
+}
+
+
+/* Logo */
+
+.logo{
+
+    text-align:center;
+    padding-bottom:25px;
+    border-bottom:1px solid rgba(255,255,255,0.15);
+
+}
+
+
+.logo h2{
+
+    color:#38bdf8;
+    font-size:24px;
+    font-weight:600;
+
+}
+
+
+/* Sidebar Menu */
+
+.sidebar ul{
+
+    list-style:none;
+    margin-top:25px;
+
+}
+
+
+.sidebar ul li{
+
+    display:flex;
+    align-items:center;
+    gap:15px;
+    padding:15px 25px;
+    cursor:pointer;
+    font-size:16px;
+    transition:.3s;
+
+}
+
+
+.sidebar ul li i{
+
+    width:20px;
+    font-size:18px;
+
+}
+
+
+/* Hover */
+
+.sidebar ul li:hover{
+
+    background:#334155;
+    color:#38bdf8;
+
+}
+
+
+/* Active */
+
+.sidebar ul li.active{
+
+    background:#3b82f6;
+    border-left:5px solid white;
+    color:white;
+
+}
+
+
+
+/* ================= Profile Container ================= */
+
+.profile-card{
+
+    margin-left:500px;
+    width:calc(100% - 250px);
+    width:60%;
+    height: 600px; 
+    margin-right:20px;
+    margin-top:180px;
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    padding-bottom:30px;
+    box-shadow:0 15px 35px rgba(0,0,0,.07);
+    /* border: 2px solid blue; */
+
+}
+
+
+
+/* Cover */
+
+.profile-cover{
+
+    height:170px;
+    background:linear-gradient(
+        135deg,
+        #4f46e5,
+        #818cf8
+    );
+
+}
+
+
+
+/* Seller Info */
+
+.seller-info{
+
+    text-align:center;
+    margin-top:-55px;
+
+}
+
+
+
+.seller-info img{
+
+    width:110px;
+    height:110px;
+    border-radius:50%;
+    border:5px solid rgb(17, 15, 15);
+    object-fit:cover;
+
+}
+
+
+
+.seller-info h2{
+
+    margin-top:10px;
+    font-size:24px;
+
+}
+
+
+
+.seller-info p{
+
+    color:#64748b;
+    margin-top:5px;
+
+}
+
+
+
+/* Details */
+
+.profile-details{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    padding:30px;
+    gap:20px;
+
+}
+
+
+
+.profile-details div{
+
+    background:#f8fafc;
+    padding:20px;
+    border-radius:15px;
+    transition:.3s;
+
+}
+
+
+
+.profile-details div:hover{
+
+    transform:translateY(-3px);
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+
+
+.profile-details label{
+
+    font-size:13px;
+    color:#64748b;
+
+}
+
+
+
+.profile-details p{
+
+    margin-top:8px;
+    font-weight:600;
+
+}
+
+
+
+/* Button */
+
+.primary-btn{
+
+    display:block;
+    margin:auto;
+    background:#4f46e5;
+    color:white;
+    border:none;
+    padding:13px 30px;
+    border-radius:10px;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+
+}
+
+
+
+.primary-btn:hover{
+
+    background:#3730a3;
+
+}
+
+
+
+@media(max-width:900px){
+
+
+.sidebar{
+
+    width:80px;
+
+}
+
+
+
+.logo h2{
+
+    font-size:0;
+
+}
+
+
+
+.logo h2::after{
+
+    content:"SS";
+    font-size:25px;
+    color:#38bdf8;
+
+}
+
+
+
+.sidebar ul li{
+
+    justify-content:center;
+    padding:18px 10px;
+    font-size:0;
+
+}
+
+
+
+.sidebar ul li i{
+
+    font-size:20px;
+
+}
+
+
+
+.profile-card{
+
+    margin-left:100px;
+
+    width:calc(100% - 130px);
+
+}
+
+
+}
+
+
+
+/* ================= Mobile ================= */
+
+@media(max-width:600px){
+
+
+.sidebar{
+
+    position:relative;
+
+    width:100%;
+
+    height:auto;
+
+}
+
+
+
+.logo h2{
+
+    font-size:22px;
+
+}
+
+
+
+.logo h2::after{
+
+    display:none;
+
+}
+
+
+
+.sidebar ul{
+
+    display:flex;
+
+    justify-content:space-around;
+
+    margin-top:10px;
+
+}
+
+
+
+.sidebar ul li{
+
+    flex-direction:column;
+
+    gap:5px;
+
+    padding:10px;
+
+    font-size:11px;
+
+}
+
+
+
+.sidebar ul li i{
+
+    font-size:18px;
+
+}
+
+
+
+.sidebar ul li.active{
+
+    border-left:none;
+
+    border-bottom:3px solid white;
+
+}
+
+
+
+.profile-card{
+
+    margin:20px 15px;
+
+    width:auto;
+
+}
+
+
+
+.profile-cover{
+
+    height:130px;
+
+}
+
+
+
+.seller-info img{
+
+    width:90px;
+
+    height:90px;
+
+}
+
+
+
+.seller-info h2{
+
+    font-size:20px;
+
+}
+
+
+
+.profile-details{
+
+    grid-template-columns:1fr;
+
+    padding:20px;
+
+}
+
+
+
+.primary-btn{
+
+    width:80%;
+
+}
+
+
+}

@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Product</title>
+
+    <link rel="stylesheet" href="../Seller/createproduct.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Sidebar -->
+
+      <aside class="sidebar">
+        <div class="logo">
+          <h2>ShopperShop</h2>
+        </div>
+
+        <ul>
+          <li><i class="fa fa-home"></i> Dashboard</li>
+
+          <li class="active">
+            <i class="fa fa-plus"></i>
+            Create Product
+          </li>
+
+          <li><i class="fa fa-box"></i> All Products</li>
+
+          <li><i class="fa fa-cart-shopping"></i> Orders</li>
+
+          <li><i class="fa fa-chart-line"></i> Profit</li>
+
+          <li><i class="fa fa-user"></i> Profile</li>
+        </ul>
+      </aside>
+
+      <!-- Content -->
+
+      <main class="content">
+        <header>
+          <h2>Create Product</h2>
+        </header>
+
+        <div class="form-box">
+          <form>
+            <div class="grid">
+              <div class="input-group">
+                <label>Product Name</label>
+
+                <input type="text" />
+              </div>
+
+              <div class="input-group">
+                <label>Brand</label>
+
+                <input type="text" />
+              </div>
+
+              <div class="input-group">
+                <label>Category</label>
+
+                <select>
+                  <option>Clothing</option>
+
+                  <option>Footwear</option>
+
+                  <option>Electronics</option>
+                </select>
+              </div>
+
+              <div class="input-group">
+                <label>Stock</label>
+
+                <input type="number" />
+              </div>
+
+              <div class="input-group">
+                <label>Selling Price</label>
+
+                <input type="number" />
+              </div>
+
+              <div class="input-group">
+                <label>MFG Price</label>
+
+                <input type="number" />
+              </div>
+            </div>
+
+            <div class="input-group">
+              <label>Description</label>
+
+              <textarea rows="5"></textarea>
+            </div>
+
+            <div class="input-group">
+              <label>Product Image</label>
+
+              <input type="file" />
+            </div>
+
+            <button class="btn">
+              <i class="fa fa-plus"></i>
+
+              Create Product
+            </button>
+          </form>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

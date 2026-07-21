@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopper Shop Seller Dashboard</title>
+
+    <link rel="stylesheet" href="./dash.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <aside class="sidebar">
+        <div class="logo">
+          <h2>ShopperShop</h2>
+        </div>
+
+        <ul>
+          <li class="active">
+            <i class="fa fa-home"></i>
+            Dashboard
+          </li>
+
+          <li>
+            <a href="./createproduct.html " ><i class="fa fa-plus"></i>
+            Create Product
+          </li>
+        </a>
+
+          <li>
+            <i class="fa fa-box"></i>
+            All Products
+          </li>
+
+          <li>
+            <i class="fa fa-cart-shopping"></i>
+            Orders
+          </li>
+
+          <li>
+            <i class="fa fa-chart-line"></i>
+            Profit
+          </li>
+
+          <li>
+            <i class="fa fa-user"></i>
+            Profile
+          </li>
+        </ul>
+      </aside>
+
+      <main class="content">
+        <header>
+          <h2>Seller Dashboard</h2>
+
+          <div class="profile">
+            <img
+              src="https://i.etsystatic.com/42415510/r/il/c43064/5656434649/il_570xN.5656434649_a2ah.jpg"
+            />
+
+            <span>Omkar Perekar</span>
+          </div>
+        </header>
+
+        <section class="cards">
+          <div class="card">
+            <i class="fa fa-box"></i>
+
+            <h3>150</h3>
+
+            <p>Total Products</p>
+          </div>
+
+          <div class="card">
+            <i class="fa fa-check-circle"></i>
+
+            <h3>96</h3>
+
+            <p>Sold Products</p>
+          </div>
+
+          <div class="card">
+            <i class="fa fa-cart-shopping"></i>
+
+            <h3>220</h3>
+
+            <p>Total Orders</p>
+          </div>
+
+          <div class="card">
+            <i class="fa fa-indian-rupee-sign"></i>
+
+            <h3>₹20,000</h3>
+
+            <p>Total Profit</p>
+          </div>
+        </section>
+
+        <section class="latest">
+          <h2>Latest Orders</h2>
+
+          <table>
+            <tr>
+              <th>Order</th>
+
+              <th>Customer</th>
+
+              <th>Product</th>
+
+              <th>Status</th>
+            </tr>
+
+            <tr>
+              <td>#1023</td>
+
+              <td>Rahul</td>
+
+              <td>Shoes</td>
+
+              <td><span class="success">Delivered</span></td>
+            </tr>
+
+            <tr>
+              <td>#1024</td>
+
+              <td>Priya</td>
+
+              <td>T-Shirt</td>
+
+              <td><span class="pending">Pending</span></td>
+            </tr>
+
+            <tr>
+              <td>#1025</td>
+
+              <td>Amit</td>
+
+              <td>Headphones</td>
+
+              <td><span class="success">Delivered</span></td>
+            </tr>
+          </table>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
