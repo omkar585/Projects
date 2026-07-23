@@ -63,6 +63,11 @@ body {
   text-align: center;
   font-size: 18px;
 }
+.sidebar ul a{
+    text-decoration: none;
+    color: white;
+}
+
 
 /* Hover */
 .sidebar ul li:hover {
