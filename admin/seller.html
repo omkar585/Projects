@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>All Sellers - ShopperShop</title>
+
+    <link rel="stylesheet" href="./admin.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="admin-container">
+      <!-- Sidebar -->
+
+      <aside class="sidebar">
+        <div class="logo">
+          <h2>ShopperShop</h2>
+
+          <span>Admin Panel</span>
+        </div>
+
+        <ul>
+          <li>
+            <a href="./Dashboard.html">
+              <i class="fa-solid fa-house"></i>
+
+              Dashboard
+            </a>
+          </li>
+
+          <li>
+            <a href="./profile.html">
+              <i class="fa-solid fa-user"></i>
+
+              Profile
+            </a>
+          </li>
+
+          <li>
+            <a href="./productreview.html">
+              <i class="fa-solid fa-check"></i>
+
+              Product Review
+            </a>
+          </li>
+
+          <li>
+            <a href="./product.html">
+              <i class="fa-solid fa-box"></i>
+
+              Products
+            </a>
+          </li>
+
+          <li class="active">
+            <a href="./sellers.html">
+              <i class="fa-solid fa-store"></i>
+
+              Sellers
+            </a>
+          </li>
+        </ul>
+      </aside>
+
+      <main class="main">
+        <header class="topbar">
+          <h2>All Sellers</h2>
+
+          <div class="admin-info">
+            <img src="https://i.pravatar.cc/100" />
+
+            <div>
+              <h4>Admin</h4>
+
+              <span>Super Admin</span>
+            </div>
+          </div>
+        </header>
+
+        <section class="table-box">
+          <h2>Seller List</h2>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Logo</th>
+
+                <th>Seller Name</th>
+
+                <th>Email</th>
+
+                <th>Products</th>
+
+                <th>Orders</th>
+
+                <th>Status</th>
+
+                <th>Action</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>
+                  <img src="https://i.pravatar.cc/70?img=5" />
+                </td>
+
+                <td>Mobile Store</td>
+
+                <td>mobile@gmail.com</td>
+
+                <td>250</td>
+
+                <td>1200</td>
+
+                <td>
+                  <span class="status completed"> Active </span>
+                </td>
+
+                <td>
+                  <a href="./seller-edit.html" class="btn"> View </a>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <img src="https://i.pravatar.cc/70?img=6" />
+                </td>
+
+                <td>Fashion Hub</td>
+
+                <td>fashion@gmail.com</td>
+
+                <td>180</td>
+
+                <td>700</td>
+
+                <td>
+                  <span class="status completed"> Active </span>
+                </td>
+
+                <td>
+                  <a href="./seller-edit.html" class="btn"> View </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

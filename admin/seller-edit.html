@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Seller Details</title>
+
+    <link rel="stylesheet" href="./admin.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="admin-container">
+      <aside class="sidebar">
+        <div class="logo">
+          <h2>ShopperShop</h2>
+
+          <span>Admin Panel</span>
+        </div>
+
+        <ul>
+          <li>
+            <a href="./Dashboard.html">
+              <i class="fa-solid fa-house"></i>
+
+              Dashboard
+            </a>
+          </li>
+
+          <li>
+            <a href="./product.html">
+              <i class="fa-solid fa-box"></i>
+
+              Products
+            </a>
+          </li>
+
+          <li class="active">
+            <a href="./seller-edit.html">
+              <i class="fa-solid fa-store"></i>
+
+              Seller Details
+            </a>
+          </li>
+        </ul>
+      </aside>
+
+      <main class="main">
+        <header class="topbar">
+          <h2>Seller Details</h2>
+
+          <div class="admin-info">
+            <img src="https://i.pravatar.cc/100" />
+
+            <div>
+              <h4>Admin</h4>
+
+              <span>Super Admin</span>
+            </div>
+          </div>
+        </header>
+
+        <section class="profile-layout">
+          <div class="profile-box">
+            <img src="https://i.pravatar.cc/150?img=5" />
+
+            <h2>Mobile Store</h2>
+
+            <p>Verified Seller</p>
+
+            <button class="btn">Disable Seller</button>
+          </div>
+
+          <div class="form-box">
+            <h2>Edit Seller Information</h2>
+
+            <div class="form-grid">
+              <div class="form-group">
+                <label>Store Name</label>
+
+                <input value="Mobile Store" />
+              </div>
+
+              <div class="form-group">
+                <label>Email</label>
+
+                <input value="mobile@gmail.com" />
+              </div>
+
+              <div class="form-group">
+                <label>Phone</label>
+
+                <input value="+91 9876543210" />
+              </div>
+
+              <div class="form-group">
+                <label>Status</label>
+
+                <input value="Active" />
+              </div>
+            </div>
+
+            <button class="btn">Save Seller</button>
+          </div>
+        </section>
+
+        <section class="table-box">
+          <h2>Seller Products</h2>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Image</th>
+
+                <th>Product</th>
+
+                <th>Price</th>
+
+                <th>Stock</th>
+
+                <th>Status</th>
+
+                <th>Action</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>
+                  <img src="https://picsum.photos/60" />
+                </td>
+
+                <td>iPhone 15 Pro</td>
+
+                <td>$999</td>
+
+                <td>30</td>
+
+                <td>
+                  <span class="status completed"> Active </span>
+                </td>
+
+                <td>
+                  <a href="./productreview.html" class="btn"> Edit </a>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <img src="https://picsum.photos/61" />
+                </td>
+
+                <td>AirPods Pro</td>
+
+                <td>$250</td>
+
+                <td>50</td>
+
+                <td>
+                  <span class="status completed"> Active </span>
+                </td>
+
+                <td>
+                  <a href="./product.html" class="btn"> Edit </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
